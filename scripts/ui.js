@@ -24,15 +24,22 @@ const generateBookItem = (item) => {
         <span>Description</span><br>
         <span>Description</span><br>
         <div class="buttons-menu">
+<<<<<<< HEAD
             <button>Collapse</button>
             <button id='edit-btn'>Edit</button>
             <button id='delete-btn'>Delete</button>
+=======
+            <button id='collapse-btn' >Collapse</button>
+            <button id='edit-btn' >Edit</button>
+            <button id='delete-btn' >Delete</button>
+>>>>>>> cf67e6a38094f75d24307ac5950489a7a2a1ad80
         </div>
     </li>`;
 };
 
+
 const generateList = () => {
-// this will generate the html for the bookmark list and will have all bookmark buttons inside of the container
+    // this will generate the html for the bookmark list and will have all bookmark buttons inside of the container
     let listItems = ``;
     [].map(item => {
         listItems += generateBookItem(item)
@@ -44,8 +51,8 @@ const generateList = () => {
 
 const toggleBookmarkForm = () => {
     if (true) {
-      //store.showBookMarkForm
-      return `<div class="bookmark-form">
+        //store.showBookMarkForm
+        return `<div class="bookmark-form">
             <form id='add-item-form' action="">
                 <div class="form-control">
                     <label for="title">Title</label>
@@ -71,7 +78,11 @@ const toggleBookmarkForm = () => {
                 </div>
                 <div class="form-controls">
                     <button type="submit">Submit</button>
+<<<<<<< HEAD
                     <button type="button" id='cancel-btn'>Cancel</button>
+=======
+                    <button id='cancel-btn' type="button">Cancel</button>
+>>>>>>> cf67e6a38094f75d24307ac5950489a7a2a1ad80
                 </div>
             </form>
         </div>`;
