@@ -53,7 +53,7 @@ const handelCancelAddNewItem = () => {
 
 // this function will render the original input form but with every text box with the correct value that is editing then the render function will run. 
 const handelEditBookmark = () => {
-  $("body").on("click", "#id=edit-btn", function (e) {
+  $("body").on("click", 'edit-btn', function (e) {
     console.log("the handelEditBookmark ran");
     // the function will go here that will show the template with the values equal to the data store and do a render
   });
