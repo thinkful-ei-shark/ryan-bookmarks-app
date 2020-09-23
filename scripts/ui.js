@@ -1,12 +1,12 @@
 const generateHeader = () => `<section class='menu-box'>
-    <button type="button" id="add-bookmark-form">new bookmark</button>
+    <button type="button" id="add-bookmark-btn">new bookmark</button>
     <select name="filter" id="filter-items">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
-    </select>
+    </select><button type="button" id="filter-btn">Filter By Stars</button>
 </section>`;
 
 
@@ -24,15 +24,16 @@ const generateBookItem = (item) => {
         <span>Description</span><br>
         <span>Description</span><br>
         <div class="buttons-menu">
-            <button>Collapse</button>
-            <button>Edit</button>
-            <button>Delete</button>
+            <button id='collapse-btn' >Collapse</button>
+            <button id='edit-btn' >Edit</button>
+            <button id='delete-btn' >Delete</button>
         </div>
     </li>`;
 };
 
+
 const generateList = () => {
-// this will generate the html for the bookmark list and will have all bookmark buttons inside of the container
+    // this will generate the html for the bookmark list and will have all bookmark buttons inside of the container
     let listItems = ``;
     [].map(item => {
         listItems += generateBookItem(item)
@@ -44,9 +45,9 @@ const generateList = () => {
 
 const toggleBookmarkForm = () => {
     if (true) {
-      //store.showBookMarkForm
-      return `<div class="bookmark-form">
-            <form action="">
+        //store.showBookMarkForm
+        return `<div class="bookmark-form">
+            <form id='add-item-form' action="">
                 <div class="form-control">
                     <label for="title">Title</label>
                     <input required name="title" id="title" type="text" placeholder="Title" >
@@ -71,7 +72,7 @@ const toggleBookmarkForm = () => {
                 </div>
                 <div class="form-controls">
                     <button type="submit">Submit</button>
-                    <button type="button">Cancel</button>
+                    <button id='cancel-btn' type="button">Cancel</button>
                 </div>
             </form>
         </div>`;
