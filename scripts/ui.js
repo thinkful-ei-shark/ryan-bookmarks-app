@@ -25,8 +25,8 @@ const generateBookItem = (item) => {
         <span>Description</span><br>
         <div class="buttons-menu">
             <button>Collapse</button>
-            <button>Edit</button>
-            <button>Delete</button>
+            <button id='edit-btn'>Edit</button>
+            <button id='delete-btn'>Delete</button>
         </div>
     </li>`;
 };
@@ -67,11 +67,11 @@ const toggleBookmarkForm = () => {
                 </div>
                 <div class="form-control">
                     <label for="description">Rating</label>
-                    <textarea required id="description" name="description" cols="30" rows="10"></textarea>
+                    <textarea required id="description" name="description" cols="30" rows="10"></textarea><button type="button" id='clear-text-btn'>Clear</button>
                 </div>
                 <div class="form-controls">
                     <button type="submit">Submit</button>
-                    <button type="button">Cancel</button>
+                    <button type="button" id='cancel-btn'>Cancel</button>
                 </div>
             </form>
         </div>`;

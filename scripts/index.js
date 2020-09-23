@@ -35,28 +35,37 @@ const handelConfirmAddBookmark = () => {
     });
 };
 
-// const handelClearTextDescription = () => {
-//     $('body').on("click", "#add-bookmark-btn", function (e) {
-//       console.log("the HandelAddNewItem ran");
-//       // add a call to the function that will create the render for the add new item
-//     });
-// }
 
-// const handelEditBookmark = () => {
-//   $("body").on("click", "#add-bookmark-btn", function (e) {
-//     console.log("the HandelAddNewItem ran");
-//     // add a call to the function that will create the render for the add new item
-//   });
-// }
+const handelClearTextDescription = () => {
+    $("body").on("click", "#clear-text-btn", function (e) {
+      console.log("the handelClearTextDescription ran");
+      // this function needs to clear the text in the text edit field
+    });
+}
 
-// const handelDeleteBookmark = () => {
-//     $('body').on("click", "#add-bookmark-btn", function (e) {
-//       console.log("the HandelAddNewItem ran");
-//       // add a call to the function that will create the render for the add new item
-//     });
-// }
+// this function will hide the add new item window and run the render function at the end. 
+const handelCancelAddNewItem = () => {
+    $("body").on("click", "#cancel-btn", function (e) {
+      console.log("the handelCancelAddNewItem ran");
+      // this function will add the state of the display: none.
+    });
+}
 
+// this function will render the original input form but with every text box with the correct value that is editing then the render function will run. 
+const handelEditBookmark = () => {
+  $("body").on("click", "#id=edit-btn", function (e) {
+    console.log("the handelEditBookmark ran");
+    // the function will go here that will show the template with the values equal to the data store and do a render
+  });
+}
 
+// this function will allow the users to delete a bookmark that they added. 
+const handelDeleteBookmark = () => {
+    $('body').on("click", "#delete-btn", function (e) {
+      console.log("the HandelAddNewItem ran");
+      // the function here will call the api that use the DELETE method to remote the entire object from the data store then render the page again. 
+    });
+}
 
 
 
@@ -65,7 +74,11 @@ const main = function () {
     console.log('main function in the index has started');
     handelAddNewItem();
     handelFilterList();
+    handelClearTextDescription();
     handelConfirmAddBookmark();
+    handelCancelAddNewItem();
+    handelEditBookmark();
+    handelDeleteBookmark();
     render();
 };
 
