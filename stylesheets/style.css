@@ -1,0 +1,85 @@
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #e8e8e8;
+}
+
+.container-box {
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.bookmark-box {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bookmark-content {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.bookmark-content h2 {
+    margin: 0;
+    font-size: 20px;
+}
+.bookmark-content .buttons-menu {
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+button {
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.menu-box {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-box button {
+    width: 20%;
+}
+
+.menu-box select {
+    width: 80%;
+    height: 35px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input, select {
+    height: 35px;
+    font-size: 13px;
+    width: 100%;
+}
+
+.form-control textarea {
+    resize: none;
+    width: 100%;
+}
