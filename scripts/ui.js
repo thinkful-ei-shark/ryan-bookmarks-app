@@ -1,12 +1,12 @@
 const generateHeader = () => `<section class='menu-box'>
-    <button type="button" id="add-bookmark-form">new bookmark</button>
+    <button type="button" id="add-bookmark-btn">new bookmark</button>
     <select name="filter" id="filter-items">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
-    </select>
+    </select><button type="button" id="filter-btn">Filter By Stars</button>
 </section>`;
 
 
@@ -46,7 +46,7 @@ const toggleBookmarkForm = () => {
     if (true) {
       //store.showBookMarkForm
       return `<div class="bookmark-form">
-            <form action="">
+            <form id='add-item-form' action="">
                 <div class="form-control">
                     <label for="title">Title</label>
                     <input required name="title" id="title" type="text" placeholder="Title" >
